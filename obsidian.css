@@ -1,18 +1,18 @@
 :root
 {
     --font-size-normal:              18px;
-    --font-size-code:                15px;
-    --font-size-side-dock:           15px;
+    --font-size-code:                16px;
+    --font-size-side-dock:           16px;
     --font-size-side-dock-title:     18px;
-    --font-size-status-bar:          15px;
+    --font-size-status-bar:          16px;
     --font-size-h1:                  26px;
     --font-size-h2:                  25px;
     --font-size-h3:                  21px;
     --font-size-h4:                  20px;
     --font-size-h5:                  19px;
     --font-size-h6:                  18px;
-    --font-family-editor:            Avenir, Avenir Next, sans-serif;
-    --font-family-preview:           Avenir, Avenir Next, sans-serif;
+    --font-family-editor:            Menlo, Monaco, 'Courier New', monospace;
+    --font-family-preview:           Menlo, Monaco, 'Courier New', monospace;
 } 
 
 .theme-light,
@@ -474,7 +474,7 @@ thead {
 
 /* search result in backlink or file search */
 .search-result-file-title {  
-  font-size: 15px ;
+  font-size: 16px ;
 }
 
 .search-result-file-matches, .search-empty-state {
@@ -566,22 +566,6 @@ color: var(--text-accent) !important;
 .modal.mod-settings button:not(.mod-cta):hover {
   background-color: var(--interactive-accent-hover);
 }
-
-/***************************************/
-/*            Hide side bar            */
-/***************************************/
-
-.workspace-ribbon:not(:hover) .workspace-ribbon-collapse-btn, 
-.workspace-ribbon:not(:hover) .side-dock-actions, 
-.workspace-ribbon:not(:hover) .side-dock-settings {
-  display:none; 
-  transition: all 300ms ease-in-out;}
-.workspace-ribbon:not(:hover) {
-  width: 0px;
-  transition: all 300ms ease-in-out;}
-
-.workspace-split.mod-left-split {margin-left: 0px;}
-.workspace-split.mod-right-split {margin-right: 0px;}
 
 /***************************************/
 /*           width of content          */
@@ -757,7 +741,7 @@ ul .task-list-item ul::before {left: 0.15em !important}
 
  /* Editor CodeBlock TEXT Appearance */
 .cm-s-obsidian pre.HyperMD-codeblock {
-  font-family: monaco !important;
+  font-family: menlo !important;
   font-size: var(--font-size-code) !important;
   padding: 1px !important;
   display: block;
