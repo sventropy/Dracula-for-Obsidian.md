@@ -6,7 +6,7 @@
 
 ## Install
 
-[INSTALL.md](./INSTALL)
+[INSTALL.md](./INSTALL.md)
 
 ## Creator
 
