@@ -1,17 +1,13 @@
-### [X](http://link-to-x.com)
+# Install
 
-#### Install using Git
+This theme has been selected as one of the built-in community themes for Obsidian, you can find the newest version in Settings -> Plugins -> Community Themes and apply the theme by simply clicking the "Use" button.
 
-If you are a git user, you can install the theme and keep up to date by cloning the repo:
+If you prefer to manually install it, please follow the steps below:
 
-    $ git clone https://github.com/dracula/template.git
+1. Download the obsidian.css file.
 
-#### Install manually
+2. In Obsidian click Settings->Plugins and turn on "Custom CSS".
 
-Download using the [GitHub .zip download](https://github.com/dracula/template/archive/master.zip) option and unzip them.
+3. Put the "obsidian.css" in your vault root folder.
 
-#### Activating theme
-
-1. Do this
-2. Then that
-3. Boom! It's working
+4. Restart Obsidian.
