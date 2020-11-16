@@ -176,6 +176,16 @@ a,
   text-decoration: none !important;
 }
 
+a:hover,
+.internal-link:hover,
+.cm-hmd-internal-link:hover,
+.cm-link:hover,
+.cm-formatting-link:hover,
+.cm-url:hover {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
 /* the url string in editor */
 .cm-s-obsidian span.cm-string{
   color: var(--text-accent-hover) !important;
