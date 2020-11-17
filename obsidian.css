@@ -1,8 +1,8 @@
 :root
 {
-    --font-size-normal:              18px;
+    --font-size-normal:              16px;
     --font-size-code:                16px;
-    --font-size-side-dock:           16px;
+    --font-size-side-dock:           15px;
     --font-size-side-dock-title:     18px;
     --font-size-status-bar:          16px;
     --font-size-h1:                  26px;
@@ -12,7 +12,7 @@
     --font-size-h5:                  19px;
     --font-size-h6:                  18px;
     --font-family-editor:            Menlo, Monaco, 'Courier New', monospace;
-    --font-family-preview:           Menlo, Monaco, 'Courier New', monospace;
+    --font-family-preview:           Menlo, Monaco, 'Courier New', sans-serif;
 } 
 
 .theme-light,
@@ -41,9 +41,9 @@
   --text-error-hover: #ff79c6;
   --text-selection: #6272a4; /* Chromium precess this color with alpha channel */
   --text-on-accent: #bd93f9;
-  --interactive-normal: #ffb86c;
+  --interactive-normal: #f8f8f2;
   --interactive-hover: #ff5555;
-  --interactive-accent: #ffb86c;
+  --interactive-accent: #f8f8f2;
   --interactive-accent-rgb: 123, 108, 217;
   --interactive-accent-hover: #ff5555;
   --scrollbar-active-thumb-bg: #282a36;
@@ -259,6 +259,11 @@ em, .cm-em {
 /* strikethrough in preview and editor */
 s, .cm-strikethrough {
   color: var(--text-muted);
+}
+
+/* color for plain urls */
+.cm-url {
+   color: var(--text-accent) !important;
 }
 
 /* list in editor */
@@ -613,12 +618,12 @@ color: var(--text-accent) !important;
 .theme-dark .workspace-leaf.mod-active .view-header {
   background-color: var(--background-secondary-alt) !important;  
   border-top: 0px !important;
-  border-bottom: 3px solid var(--interactive-accent) !important;
+  border-bottom: 3px solid var(--background-secondary) !important;
 }
 
 .workspace-leaf.mod-active .view-header-title-container:after {
   background: linear-gradient(to bottom, transparent, var(--background-secondary-alt)) !important;
-}
+}background-secondary
 
 .workspace-leaf.mod-active .view-header-title,
 .workspace-leaf.mod-active .view-header-icon
