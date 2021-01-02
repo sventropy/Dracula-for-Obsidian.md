@@ -1,19 +1,18 @@
-:root
-{
-    --font-size-normal:              16px;
-    --font-size-code:                16px;
-    --font-size-side-dock:           15px;
-    --font-size-side-dock-title:     18px;
-    --font-size-status-bar:          16px;
-    --font-size-h1:                  26px;
-    --font-size-h2:                  25px;
-    --font-size-h3:                  21px;
-    --font-size-h4:                  20px;
-    --font-size-h5:                  19px;
-    --font-size-h6:                  18px;
-    --font-family-editor:            Menlo, Monaco, 'Courier New', monospace;
-    --font-family-preview:           Menlo, Monaco, 'Courier New', sans-serif;
-} 
+:root {
+  --font-size-normal: 16px;
+  --font-size-code: 16px;
+  --font-size-side-dock: 15px;
+  --font-size-side-dock-title: 18px;
+  --font-size-status-bar: 16px;
+  --font-size-h1: 26px;
+  --font-size-h2: 25px;
+  --font-size-h3: 21px;
+  --font-size-h4: 20px;
+  --font-size-h5: 19px;
+  --font-size-h6: 18px;
+  --font-family-editor: "Source Code Pro", monospace;
+  --font-family-preview: "Source Sans Pro", sans-serif;
+}
 
 .theme-light,
 .theme-dark {
@@ -50,18 +49,18 @@
   --scrollbar-bg: #282a36;
   --scrollbar-thumb-bg: #282a36;
 
-  --text-title-h1:              #ff79c6;
-  --text-title-h2:              #bd93f9;
-  --text-title-h3:              #ff5555;
-  --text-title-h4:              #ffb86c;
-  --text-title-h5:              #50fa7b;
-  --text-title-h6:              #8be9fd;
-  --inline-code:                #bd93f9;
-  --code-block:                 #8be9fd;
-  --pre-code:                   #44475a;
-  --blockquote-border:          #ffb86c;
-  --vim-cursor:                 #ff5555;
-  --border-color:               #2b2727; /*also like transparent*/
+  --text-title-h1: #ff79c6;
+  --text-title-h2: #bd93f9;
+  --text-title-h3: #ff5555;
+  --text-title-h4: #ffb86c;
+  --text-title-h5: #50fa7b;
+  --text-title-h6: #8be9fd;
+  --inline-code: #bd93f9;
+  --code-block: #8be9fd;
+  --pre-code: #44475a;
+  --blockquote-border: #ffb86c;
+  --vim-cursor: #ff5555;
+  --border-color: #2b2727; /*also like transparent*/
 }
 
 /*-------------------------------------*/
@@ -100,15 +99,13 @@
 
 /*vertical resize-handle*/
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle, 
-.workspace-split.mod-right-split > .workspace-leaf-resize-handle{
-  width: 1px !important;
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
   background-color: var(--border-color);
 }
 
 /*horizontal resize-handle*/
-.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle{
-  height: 1px !important;
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
   background-color: var(--border-color);
 }
 
@@ -117,33 +114,10 @@
   background-color: var(--background-primary-alt);
 }
 
-/*the vertical split*/
-.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
-.workspace-split.mod-vertical > .workspace-split,
-.workspace-split.mod-vertical > .workspace-leaf,
-.workspace-tabs{
-  padding-right: 0px;
-}
-
 /*status-bar*/
-.status-bar{
+.status-bar {
   font-size: var(--font-size-status-bar);
   background-color: var(--background-secondary-alt);
-  border-top: 0px;
-}
-
-.document-search-container{
-  border-top: 0px;
-  border-right: 0px;
-  z-index: inherit;
-}
-
-.workspace-ribbon.mod-left.is-collapsed{
-  border-right: 1px solid var(--border-color);
-}
-
-.workspace-ribbon.mod-right.is-collapsed{
-  border-left: 1px solid var(--border-color);
 }
 
 /*************************************/
@@ -156,50 +130,24 @@ a.tag:hover {
 }
 
 /* Tag Color in editor and preview*/
-.cm-hashtag, a.tag {
+.cm-hashtag,
+a.tag {
   color: var(--text-accent-hover) !important;
-  text-decoration: none !important;
-  font-style: normal !important;
 }
 
 /*********************************/
 /*             link              */
 /*********************************/
 
-/* link */
-a,
-.internal-link,
-.cm-hmd-internal-link,
-.cm-link,
-.cm-formatting-link,
-.cm-url {
-  text-decoration: none !important;
-}
-
-a:hover,
-.internal-link:hover,
-.cm-hmd-internal-link:hover,
-.cm-link:hover,
-.cm-formatting-link:hover,
-.cm-url:hover {
-  text-decoration: underline !important;
-  cursor: pointer;
-}
-
 /* the url string in editor */
-.cm-s-obsidian span.cm-string{
+.cm-s-obsidian span.cm-string {
   color: var(--text-accent-hover) !important;
-}
-
-/* make external links italics to differentiate */
-a:not(.internal-link) {
-  font-style: italic;
 }
 
 /*footnote*/
 .cm-s-obsidian pre.HyperMD-footnote span.cm-hmd-footnote,
 .cm-s-obsidian span.cm-footref {
-  color: var(--text-accent) !important; 
+  color: var(--text-accent) !important;
 }
 
 /***************************************/
@@ -208,11 +156,9 @@ a:not(.internal-link) {
 
 /* Cursor color and opacity */
 
-.cm-fat-cursor .CodeMirror-cursor, .cm-animate-fat-cursor
- {
-  width: 0.5em;
+.cm-fat-cursor .CodeMirror-cursor,
+.cm-animate-fat-cursor {
   background: var(--vim-cursor);
-  opacity: 60% !important;
 }
 
 /**************************************/
@@ -227,43 +173,43 @@ a:not(.internal-link) {
 /* set the text selection color for preview mode */
 ::selection {
   background-color: var(--text-selection);
-} 
+}
 
 /* normal text outside of headings and code of editor */
-.cm-s-obsidian, .mod-single-child .cm-s-obsidian {
+.cm-s-obsidian,
+.mod-single-child .cm-s-obsidian {
   font-family: var(--font-family-editor);
   font-size: var(--font-size-normal);
 }
 
 /* normal text outside of headings and code of preview */
-.markdown-preview-view, .mod-single-child .markdown-preview-view {
+.markdown-preview-view,
+.mod-single-child .markdown-preview-view {
   font-family: var(--font-family-editor);
   font-size: var(--font-size-normal);
-  padding-top: 0px;
-  padding-left: 2% !important;
-  padding-right: 1% !important;
 }
 
 /* bold in preview and editor */
-strong, .cm-strong {
-  font-weight: 600;
+strong,
+.cm-strong {
   color: #50fa7b;
 }
 
 /* emphasis in preview and editor */
-em, .cm-em {
+em,
+.cm-em {
   color: var(--text-muted);
-  font-style: italic;
 }
 
 /* strikethrough in preview and editor */
-s, .cm-strikethrough {
+s,
+.cm-strikethrough {
   color: var(--text-muted);
 }
 
 /* color for plain urls */
 .cm-url {
-   color: var(--text-accent) !important;
+  color: var(--text-accent) !important;
 }
 
 /* list in editor */
@@ -276,72 +222,45 @@ s, .cm-strikethrough {
   background-color: var(--text-faint) !important;
 }
 
-/* embedded images */
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* img hover zoom out img*/
-img:hover {
-  transform: scale(1.04);
-  transition: transform 0.25s ease-in-out 0s;
-}
-
-.community-theme img:hover{
-  transform: none;
-}
-
-/*********************************/
-/* Headings - EDITOR and PREVIEW */
-/*********************************/
-
-
 /* headings for editor and preview */
-.cm-header-1, .markdown-preview-view h1
-{
+.cm-header-1,
+.markdown-preview-view h1 {
   font-family: var(--font-family-editor);
-  font-weight: 500;
   font-size: var(--font-size-h1);
   color: var(--text-title-h1);
 }
 
-.cm-header-2, .markdown-preview-view h2
-{
+.cm-header-2,
+.markdown-preview-view h2 {
   font-family: var(--font-family-editor);
-  font-weight: 500;
   font-size: var(--font-size-h2);
   color: var(--text-title-h2);
 }
 
-.cm-header-3, .markdown-preview-view h3
-{
+.cm-header-3,
+.markdown-preview-view h3 {
   font-family: var(--font-family-editor);
-  font-weight: 500;
   font-size: var(--font-size-h3);
   color: var(--text-title-h3);
 }
 
-.cm-header-4, .markdown-preview-view h4
-{
+.cm-header-4,
+.markdown-preview-view h4 {
   font-family: var(--font-family-editor);
-  font-weight: 500;
   font-size: var(--font-size-h4);
   color: var(--text-title-h4);
 }
 
-.cm-header-5, .markdown-preview-view h5
-{
+.cm-header-5,
+.markdown-preview-view h5 {
   font-family: var(--font-family-editor);
-  font-weight: 500;
   font-size: var(--font-size-h5);
   color: var(--text-title-h5);
 }
 
-.cm-header-6, .markdown-preview-view h6
-{
+.cm-header-6,
+.markdown-preview-view h6 {
   font-family: var(--font-family-editor);
-  font-weight: 500;
   font-size: var(--font-size-h6);
   color: var(--text-title-h6);
 }
@@ -352,35 +271,23 @@ img:hover {
 
 /* code blocks in preview */
 pre code {
-  font-family: monaco !important;
+  font-family: var(--font-family-editor) !important;
   font-size: var(--font-size-code) !important;
-  padding: 6px !important;
-  line-height: normal;
-  display: block;
-  color: var(--code-block)  !important;
-}
-
-/* padding of code blocks in preview */
-.markdown-preview-view pre {
-  padding: 0px !important;
+  color: var(--code-block) !important;
 }
 
 /* font-size of in-line block for preview */
-.markdown-preview-view code
-{
+.markdown-preview-view code {
   font-size: var(--font-size-code);
 }
-
 
 /* remove the shadow that typically affect light mode */
 .theme-dark code[class*="language-"],
 .theme-dark pre[class*="language-"],
 .theme-light code[class*="language-"],
-.theme-light pre[class*="language-"]
-{
-    text-shadow: none !important;
-    color: var(--text-faint) !important;
-    background-color: var(--pre-code);
+.theme-light pre[class*="language-"] {
+  color: var(--text-faint) !important;
+  background-color: var(--pre-code);
 }
 
 /***************************************/
@@ -398,46 +305,20 @@ pre code {
 /* for editor */
 .cm-quote {
   color: var(--text-normal) !important;
-  font-style: italic;
 }
 
 /* for preview */
 .markdown-preview-view blockquote {
   background-color: var(--pre-code);
-  border: 0px solid;
   border-color: var(--blockquote-border) !important;
-  border-left-width: 4px !important;
-  border-radius: 0 8px 8px 0;
-  line-height: 1.5em;
-  margin: 30px 0px;
-  font-style: italic;
 }
 
 /***************************************/
 /*             table                   */
 /***************************************/
 
-th {
-  font-weight: 800 !important;
-}
-
 .markdown-preview-view th {
-    font-weight: 800;
-    background-color: var(--background-secondary) !important;
-}
-
-thead {
-  border-bottom: 3px solid var(--background-modifier-border);
-}
-
-.table {
-  padding: 4px;
-  line-height: normal;
-  display: block;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+  background-color: var(--background-secondary) !important;
 }
 
 /***************************************/
@@ -445,77 +326,43 @@ thead {
 /***************************************/
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: '✓';
-  position: absolute;
   color: var(--text-accent);
-  font-size:1em;
-  line-height: 1.25em;
-  width:1.2em;
-  text-align:center;
-  text-shadow: 0 0 0.1em var(--text-accent);
-}
-
-.markdown-preview-view .task-list-item-checkbox {
-  -webkit-appearance: none;
-  top: 0.2em !important;
-  right: 4px;
-  box-sizing: border-box;
-  border: 1px solid  var(--text-muted);
-  position: relative;
-  width: 1.25em;
-  height: 1.25em;
-  margin: 0;
-  box-shadow: 0 0 0.1em var(--text-muted);
 }
 
 .checkbox-container {
-    background-color: var(--background-primary);
+  background-color: var(--background-primary);
 }
-
 
 /***************************************/
 /*              popover                */
 /***************************************/
 
-.popover{
+.popover {
   border: 1px solid var(--border-color);
   background-color: var(--background-secondary);
 }
-
 
 /***************************************/
 /*            Side panel               */
 /***************************************/
 
 /* search result in backlink or file search */
-.search-result-file-title {  
-  font-size: 16px ;
+.search-result-file-title {
+  font-size: 16px;
 }
 
-.search-result-file-matches, .search-empty-state {
+.search-result-file-matches,
+.search-empty-state {
   font-size: var(--font-size-side-dock);
 }
 
-/*decrease the spacing between result items*/
-.search-result-file-title,
-.search-result-file-match {
-  padding: 0px 10px;
-}
-
-.nav-file-title, .nav-folder-title {
-  border-bottom-left-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-  border-top-left-radius: 0 !important;
-  border-top-right-radius: 0 !important;
-}
-
 /*backlink pane*/
-.workspace-leaf-content[data-type="backlink"] .view-content{
+.workspace-leaf-content[data-type="backlink"] .view-content {
   background-color: var(--background-secondary);
 }
 
 .workspace-leaf-content[data-type="tag"] .tag-pane-tag-count,
-.workspace-leaf-content[data-type="tag"] .tag-pane-tag-text {  
+.workspace-leaf-content[data-type="tag"] .tag-pane-tag-text {
   font-size: var(--font-size-side-dock);
 }
 
@@ -527,24 +374,17 @@ thead {
 /***************************************/
 
 /* Naked Embeds */
-.markdown-embed-title { display: none; }
-.markdown-preview-view .markdown-embed-content>:first-child { margin-top: 0; }
-.markdown-preview-view .markdown-embed-content>:last-child { margin-bottom: 0; }
-/*remove the following two line, you will get border and scroll*/
-.markdown-preview-view .markdown-embed { border:none; padding:0; margin:0; }
-.markdown-preview-view .markdown-embed-content 
-{ 
-  max-height: unset;
+.markdown-preview-view .markdown-embed-content {
   background-color: var(--background-secondary);
 }
 
 /* the link on the top right corner*/
 .markdown-embed-link {
-color: var(--text-faint) !important;
+  color: var(--text-faint) !important;
 }
 
 .markdown-embed-link:hover {
-color: var(--text-accent) !important;
+  color: var(--text-accent) !important;
 }
 
 /***************************************/
@@ -552,25 +392,23 @@ color: var(--text-accent) !important;
 /***************************************/
 .graph-view.color-circle,
 .graph-view.color-fill-highlight,
-.graph-view.color-line-highlight
-{
-    color: var(--text-accent) !important;    
+.graph-view.color-line-highlight {
+  color: var(--text-accent) !important;
 }
 
-.graph-view.color-text
-{
-    color: var(--text-normal) !important;
+.graph-view.color-text {
+  color: var(--text-normal) !important;
 }
 
 .graph-view.color-line {
-    color: #6272a4;
+  color: #6272a4;
 }
 
-.graph-view.color-fill{
-    color: var(--text-muted);
+.graph-view.color-fill {
+  color: var(--text-muted);
 }
 
-.workspace-leaf-content[data-type = "graph"] .view-content{
+.workspace-leaf-content[data-type="graph"] .view-content {
   background-color: var(--background-primary);
 }
 
@@ -582,22 +420,6 @@ color: var(--text-accent) !important;
   background-color: var(--interactive-accent-hover);
 }
 
-/***************************************/
-/*           width of content          */
-/***************************************/
-
-.markdown-source-view.is-readable-line-width .CodeMirror {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.markdown-preview-view.is-readable-line-width .markdown-preview-section {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /**************************************/
 /*  note header bar for non-andy mode */
 /*        activated in dark mode      */
@@ -606,108 +428,58 @@ color: var(--text-accent) !important;
 /* header */
 
 .theme-dark .view-header {
-  background-color: var(--background-primary) !important;   
-  border-top: 1px solid var(--border-color) !important;
-  border-bottom: 1px solid var(--border-color) !important;
+  background-color: var(--background-primary) !important;
 }
 
 .theme-dark .view-header-title-container:after {
-  background: linear-gradient(to bottom, transparent, var(--background-primary)) !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-primary)
+  ) !important;
 }
 
 .theme-dark .workspace-leaf.mod-active .view-header {
-  background-color: var(--background-secondary-alt) !important;  
-  border-top: 0px !important;
-  border-bottom: 3px solid var(--background-secondary) !important;
+  background-color: var(--background-secondary-alt) !important;
 }
 
 .workspace-leaf.mod-active .view-header-title-container:after {
-  background: linear-gradient(to bottom, transparent, var(--background-secondary-alt)) !important;
-}background-secondary
-
-.workspace-leaf.mod-active .view-header-title,
-.workspace-leaf.mod-active .view-header-icon
-{
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-secondary-alt)
+  ) !important;
+}
+background-secondary .workspace-leaf.mod-active .view-header-title,
+.workspace-leaf.mod-active .view-header-icon {
   color: var(--background-modifier-border);
 }
 
-.view-header-title, .view-header-icon, .view-action{
+.view-header-title,
+.view-header-icon,
+.view-action {
   color: var(--text-faint);
 }
 
-
-/* shift sticky position, so titles will stack up to the left */
-/* This will currently stack to a maximum of 10 before resetting */
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-8) { left: calc(var(--sticky-left) * 0); }
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-7) { left: calc(var(--sticky-left) * 1); }
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-6) { left: calc(var(--sticky-left) * 2); }
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-5) { left: calc(var(--sticky-left) * 3); }
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-4) { left: calc(var(--sticky-left) * 4); }
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-3) { left: calc(var(--sticky-left) * 5); }
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-2) { left: calc(var(--sticky-left) * 6); }
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-1) { left: calc(var(--sticky-left) * 7); }
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n+0) { left: calc(var(--sticky-left) * 8); }
-.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n+1) { left: calc(var(--sticky-left) * 9); }
-
 /* now it's time for the fancy vertical titles */
-
-/* first we'll add a bit of gap for the title to sit inside of */
-.theme-light .workspace-leaf-content {
-  padding-left: var(--sticky-left);
-  position: relative;
-}
 
 /* this is where the magic happens */
 .theme-light .view-header {
-  writing-mode: vertical-lr;
-  border-right: 1px solid var(--border-color);
-  border-left: 0px !important;
-  border-top: none;
-  border-bottom: none;
-  height: auto;
-  width: 36px;
-  position: absolute;
-  left:0;
-  top:0;
-  bottom:0;
   background-color: var(--background-primary) !important;
 }
 
 /* fix the long-title-obscuring shadows */
 .theme-light .view-header-title-container:after {
-  width: 100%;
-  height: 30px;
-  top:unset;
-  bottom: 0;
-  background: linear-gradient(to bottom, transparent, var(--background-primary))!important;
-}
-
-/* unset the title container height and swap padding */
-.theme-light .view-header-title-container {
-  height: unset;
-  padding-left: unset;
-  padding-top: 5px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-primary)
+  ) !important;
 }
 
 /* active titles have different border colours */
 .theme-light .workspace-leaf.mod-active .view-header {
-  background-color: var(--background-secondary-alt) !important; 
-  border-right: 3px solid var(--interactive-accent) !important;
-  border-left: 0px;
-  border-bottom: none;
-}
-
-/* swap the padding/margin around for the header and actions icons */
-.theme-light .view-header-icon, .theme-light .view-actions {
-  padding: 10px 5px;
-}
-.theme-light .view-action {
-  margin: 8px 0;
-}
-
-/* get rid of the gap left by the now-missing horizontal title */
-.theme-light .view-content {
-  height: 100%;
+  background-color: var(--background-secondary-alt) !important;
 }
 
 /* make the fake drop target overlay have a background so you can see it. */
@@ -716,29 +488,11 @@ color: var(--text-accent) !important;
   background-color: var(--background-primary);
 }
 
-/*preview padding too small*/
-.theme-light .markdown-preview-view, .theme-light .mod-single-child .markdown-preview-view {
+.theme-light .markdown-preview-view,
+.theme-light .mod-single-child .markdown-preview-view {
   font-family: var(--font-family-editor);
   font-size: var(--font-size-normal);
-  padding-top: 5px;
-  padding-left: 4% !important;
-  padding-right: 2% !important;
 }
-
-/***************************************/
-/*    at a rule line before ul list    */
-/***************************************/
-
-ul ul { position: relative; }
-ul ul::before {
-  content:'';
-  border-left: 1px solid var(--border-color);
-  position: absolute;
-}
-ul ul::before { left: -1em; top: 0; bottom: 0; }
-
-/* rule line when there are checkboxes*/
-ul .task-list-item ul::before {left: 0.15em !important}
 
 /***************************************/
 /*       Code block in Editor          */
@@ -747,27 +501,17 @@ ul .task-list-item ul::before {left: 0.15em !important}
 /* in-line block for editor */
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code,
-.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code)
-{
+.cm-s-obsidian
+  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
   background-color: var(--pre-code-bg);
   color: var(--inline-code) !important;
-  bottom: 0px !important;
 }
 
- /* Editor CodeBlock TEXT Appearance */
+/* Editor CodeBlock TEXT Appearance */
 .cm-s-obsidian pre.HyperMD-codeblock {
   font-family: menlo !important;
   font-size: var(--font-size-code) !important;
-  padding: 1px !important;
-  display: block;
   color: var(--code-block) !important;
-  font-weight: 500;
-  text-indent: 0px !important;
-}
-
-/*remove the border of codeblock in editor */
-.HyperMD-codeblock-bg{
-  border: 0px !important;
 }
 
 /*an active line highlight in vim normal mode 
@@ -776,33 +520,27 @@ ul .task-list-item ul::before {left: 0.15em !important}
 } */
 
 /* in-line block for preview */
-code{
+code {
   color: var(--inline-code) !important;
-  bottom: 0px !important;
 }
 
 /* graph css  */
 .theme-dark .graph-view.color-arrow {
   color: #50fa7b;
-  }
-  
-  .theme-dark .graph-view.color-fill-tag {
-    color: #ffb86c;
-  }
-  
-  .theme-dark .graph-view.color-fill-attachment {
-    color: #ff5555;
-  }
-  
-  .theme-dark .graph-view.color-fill-unresolved {
-    color: #6272a4; 
-  }
+}
 
-  .search-result-collapse-indicator {
-    position: absolute;
-    left: 0;
-    top: -3px;
-    color: var(--text-faint);
-    transition: transform 100ms ease-in-out;
-    padding: 0px  !important;
-  }
+.theme-dark .graph-view.color-fill-tag {
+  color: #ffb86c;
+}
+
+.theme-dark .graph-view.color-fill-attachment {
+  color: #ff5555;
+}
+
+.theme-dark .graph-view.color-fill-unresolved {
+  color: #6272a4;
+}
+
+.search-result-collapse-indicator {
+  color: var(--text-faint);
+}
