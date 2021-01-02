@@ -35,23 +35,23 @@
   --text-normal: #f8f8f2;
   --text-muted: #f8f8f2;
   --text-faint: #bd93f9;
-  --text-highlight-bg: #ff5555;
+  --text-highlight-bg: #bd93f9;
   --text-error: #ff79c6;
   --text-error-hover: #ff79c6;
   --text-selection: #6272a4; /* Chromium precess this color with alpha channel */
   --text-on-accent: #bd93f9;
   --interactive-normal: #f8f8f2;
-  --interactive-hover: #ff5555;
+  --interactive-hover: #f0f98b;
   --interactive-accent: #f8f8f2;
   --interactive-accent-rgb: 123, 108, 217;
-  --interactive-accent-hover: #ff5555;
+  --interactive-accent-hover: #f0f98b;
   --scrollbar-active-thumb-bg: #282a36;
   --scrollbar-bg: #282a36;
   --scrollbar-thumb-bg: #282a36;
 
   --text-title-h1: #ff79c6;
   --text-title-h2: #bd93f9;
-  --text-title-h3: #ff5555;
+  --text-title-h3: #f0f98b;
   --text-title-h4: #ffb86c;
   --text-title-h5: #50fa7b;
   --text-title-h6: #8be9fd;
@@ -59,7 +59,7 @@
   --code-block: #8be9fd;
   --pre-code: #44475a;
   --blockquote-border: #ffb86c;
-  --vim-cursor: #ff5555;
+  --vim-cursor: #f0f98b;
   --border-color: #2b2727; /*also like transparent*/
 }
 
@@ -488,6 +488,7 @@ background-secondary .workspace-leaf.mod-active .view-header-title,
   background-color: var(--background-primary);
 }
 
+/*preview padding too small*/
 .theme-light .markdown-preview-view,
 .theme-light .mod-single-child .markdown-preview-view {
   font-family: var(--font-family-editor);
@@ -534,7 +535,7 @@ code {
 }
 
 .theme-dark .graph-view.color-fill-attachment {
-  color: #ff5555;
+  color: #f0f98b;
 }
 
 .theme-dark .graph-view.color-fill-unresolved {
